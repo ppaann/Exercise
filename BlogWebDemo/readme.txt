@@ -1,0 +1,7 @@
+Simple blog web
+
+Two version of layout
+1. index-bootstrap.html
+  Use only Bootstrap class. It is easy and fast good for demo propose. But it also makes html file complicate.
+2. index-selfLayout.html
+  Use self made layout. It has a clean html and good for production.

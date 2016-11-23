@@ -1,0 +1,72 @@
+div[id^="column-"]{
+  min-height: 200px; // for demo
+}
+
+// a trick to get equal column height
+.column-side{
+  margin-bottom:-5000em;
+  padding-bottom: 5000em;
+}
+
+
+/* 
+* Self made layout
+*/
+div[class^="column-layout-"]{
+  float:left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.column-layout-left{
+  background-color: $brand-primary;
+  width: 100%;
+  // small grid
+  @media (min-width: $screen-sm-min) {
+    width: 100%;
+    margin-left:0;
+  }
+  // Medium grid
+  @media (min-width: $screen-md-min) {
+    width: 25%;
+    margin-left: -100%;
+  }
+  // large grid
+  @media (min-width: $screen-lg-min) {
+    width: 25%;
+    margin-left: -75%;
+  } 
+}
+.column-layout-right{
+  background-color: $state-success-bg;
+  display:none;
+  // small grid
+  @media (min-width: $screen-sm-min) {
+    display:none;
+  }
+  // Medium grid
+  @media (min-width: $screen-md-min) {
+    display:none;
+  }
+  // large grid
+  @media (min-width: $screen-lg-min) {
+    width: 25%;
+    display: block;
+  } 
+}
+.column-layout-center{
+  width: 100%;
+  // small grid
+  @media (min-width: $screen-sm-min) {
+    width: 100%;
+  }
+  // Medium grid
+  @media (min-width: $screen-md-min) {
+    width: 75%;
+    margin-left:25%;
+  }
+  // large grid
+  @media (min-width: $screen-lg-min) {
+    width: 50%;
+    margin-left: 25%;
+  } 
+}

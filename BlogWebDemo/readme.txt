@@ -1,4 +1,4 @@
-Simple blog web
+*** Simple blog web
 
 Two versions of layout
 1. index-bootstrap.html
@@ -6,6 +6,9 @@ Two versions of layout
 2. index-selfLayout.html
   Use self made layout. It has a clean html and good for production.
   
+  
+*** USE FIREFOX TO OPEN THE HTML
+Chrome need to enable local file access to run the angular app
 
 /dist -- production code (publishable)
 
